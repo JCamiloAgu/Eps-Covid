@@ -5,22 +5,19 @@ namespace CitasEps.Models
     class Schedule : IModel
     {
         private readonly int id;
-        private readonly int id_officials;
-        private readonly DateTime init_hour;
-        private readonly DateTime end_hour;
+        private readonly int idOfficials;
+        private readonly DateTime initHour;
+        private readonly DateTime endHour;
 
-        public Schedule(int id, int id_officials, DateTime init_hour, DateTime end_hour)
+        public Schedule(int id, int idOfficials, DateTime initHour, DateTime endHour)
         {
             this.id = id;
-            this.id_officials = id_officials;
-            this.init_hour = init_hour;
-            this.end_hour = end_hour;
+            this.idOfficials = idOfficials;
+            this.initHour = initHour;
+            this.endHour = endHour;
         }
 
-        public object GetAll()
-        {
-            return this;
-        }
+        public object GetAll() => this;
 
         public object GetAttribute(string attribute)
         {
@@ -31,13 +28,13 @@ namespace CitasEps.Models
                     attributeReturn = id;
                     break;
                 case "id_officials":
-                    attributeReturn = id_officials;
+                    attributeReturn = idOfficials;
                     break;
                 case "init_hour":
-                    attributeReturn = init_hour;
+                    attributeReturn = initHour;
                     break;
                 case "end_hour":
-                    attributeReturn = end_hour;
+                    attributeReturn = endHour;
                     break;
             }
             return attributeReturn;

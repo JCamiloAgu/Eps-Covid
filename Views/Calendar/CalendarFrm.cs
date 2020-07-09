@@ -165,9 +165,9 @@ namespace CitasEps
             int index = labelsAppoinments.FindIndex(lab => lab.Name == label.Name);
             SheduleAppoinment sheduleAppoinment = list[index];
 
-            string officialId = sheduleAppoinment.getOfficial().GetAttribute("id").ToString();
-            string quoteId = sheduleAppoinment.getQuoteId().ToString();
-            DateTime quoteDateTime = sheduleAppoinment.getDateTime();
+            string officialId = sheduleAppoinment.GetOfficial().GetAttribute("id").ToString();
+            string quoteId = sheduleAppoinment.GetQuoteId().ToString();
+            DateTime quoteDateTime = sheduleAppoinment.GetDateTime();
 
 
             switch (rol)
@@ -323,7 +323,7 @@ namespace CitasEps
             {
                 foreach (SheduleAppoinment appoinment in sheduleAppoinments)
                 {
-                    if (Convert.ToInt32(appoinment.getDateTime().ToString("dd")) == day)
+                    if (Convert.ToInt32(appoinment.GetDateTime().ToString("dd")) == day)
                     {
                         Label label = createLabelAppoinment(appoinment, counterLabel);
                         labelsAppoinments.Add(label);
@@ -343,9 +343,9 @@ namespace CitasEps
             Label label = new Label();
 
             label.Name = "LBSheduleAppointment" + index;
-            label.Text = appoinment.getDateTime().ToString("hh:mm:ss tt");
+            label.Text = appoinment.GetDateTime().ToString("hh:mm:ss tt");
             label.TextAlign = ContentAlignment.MiddleCenter;
-            label.BackColor = (appoinment.getQuoteId() == null) ? Color.White : generateColorRandom();
+            label.BackColor = (appoinment.GetQuoteId() == null) ? Color.White : generateColorRandom();
             label.Dock = DockStyle.Top;
             label.Size = new Size(150, 20);
             label.Cursor = Cursors.Hand;

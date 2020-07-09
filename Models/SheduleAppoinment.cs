@@ -2,13 +2,12 @@
 
 namespace CitasEps.Models
 {
-
     public class SheduleAppoinment
     {
 
-        private Official official;
-        private DateTime dateTime;
-        private int? quoteId;
+        private readonly Official official;
+        private readonly DateTime dateTime;
+        private readonly int? quoteId;
 
         public SheduleAppoinment(Official official, DateTime dateTime, int? quoteId)
         {
@@ -17,24 +16,10 @@ namespace CitasEps.Models
             this.quoteId = quoteId;
         }
 
-        public Official getOfficial()
-        {
-            return official;
-        }
+        public Official GetOfficial() => official;
+        public DateTime GetDateTime() => dateTime;
 
-        public DateTime getDateTime()
-        {
-            return dateTime;
-        }
+        public int? GetQuoteId() => quoteId;
 
-        public int? getQuoteId()
-        {
-            return quoteId;
-        }
-
-        public int shortWithNumberDay()
-        {
-            return Convert.ToInt32(dateTime.ToString("dd"));
-        }
     }
 }

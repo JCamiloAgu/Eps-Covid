@@ -11,10 +11,7 @@
             this.name = name;
         }
 
-        public object GetAll()
-        {
-            return this;
-        }
+        public object GetAll() => this;
 
         public object GetAttribute(string attribute)
         {

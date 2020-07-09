@@ -5,24 +5,21 @@ namespace CitasEps.Models
     class Quote : IModel
     {
         private readonly int id;
-        private readonly int id_users;
-        private readonly int id_officials;
-        private readonly int id_media;
-        private readonly DateTime date_time;
+        private readonly int idUsers;
+        private readonly int idOfficials;
+        private readonly int idMedia;
+        private readonly DateTime dateTime;
 
-        public Quote(int id, int id_users, int id_officials, int id_media, DateTime date_time)
+        public Quote(int id, int idUsers, int idOfficials, int idMedia, DateTime dateTime)
         {
             this.id = id;
-            this.id_users = id_users;
-            this.id_officials = id_officials;
-            this.date_time = date_time;
-            this.id_media = id_media;
+            this.idUsers = idUsers;
+            this.idOfficials = idOfficials;
+            this.dateTime = dateTime;
+            this.idMedia = idMedia;
         }
 
-        public object GetAll()
-        {
-            return this;
-        }
+        public object GetAll() => this;
 
         public object GetAttribute(string attribute)
         {
@@ -33,16 +30,16 @@ namespace CitasEps.Models
                     attributeReturn = id;
                     break;
                 case "id_users":
-                    attributeReturn = id_users;
+                    attributeReturn = idUsers;
                     break;
                 case "id_officials":
-                    attributeReturn = id_officials;
+                    attributeReturn = idOfficials;
                     break;
                 case "id_media":
-                    attributeReturn = id_media;
+                    attributeReturn = idMedia;
                     break;
                 case "date_time":
-                    attributeReturn = date_time;
+                    attributeReturn = dateTime;
                     break;
             }
             return attributeReturn;

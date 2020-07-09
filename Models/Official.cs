@@ -5,28 +5,26 @@
         private readonly int id;
         private readonly string identification;
         private readonly string name;
-        private readonly string last_name;
+        private readonly string lastName;
         private readonly string email;
         private string password;
         private readonly string rol;
         private readonly bool status;
 
-        public Official(int id, string identification, string name, string last_name, string email, string password, string rol, bool status)
+        public Official(int id, string identification, string name, string lastName, string email, string password, string rol, bool status)
         {
             this.id = id;
             this.identification = identification;
             this.name = name;
-            this.last_name = last_name;
+            this.lastName = lastName;
             this.email = email;
             this.password = password;
             this.rol = rol;
             this.status = status;
         }
 
-        public object GetAll()
-        {
-            return this;
-        }
+        public object GetAll()=> this;
+        public void SetPassword(string password) => this.password = password;
 
         public object GetAttribute(string attribute)
         {
@@ -43,7 +41,7 @@
                     attributeReturn = name;
                     break;
                 case "last_name":
-                    attributeReturn = last_name;
+                    attributeReturn = lastName;
                     break;
                 case "email":
                     attributeReturn = email;
@@ -61,6 +59,5 @@
             return attributeReturn;
         }
 
-        public void SetPassword(string password) => this.password = password;
     }
 }

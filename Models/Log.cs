@@ -5,22 +5,19 @@ namespace CitasEps.Models
     class Log : IModel
     {
         private readonly int id;
-        private readonly int id_officials;
-        private readonly DateTime date_time;
+        private readonly int idOfficials;
+        private readonly DateTime dateTime;
         private readonly string description;
 
-        public Log(int id, int id_officials, DateTime date_time, string description)
+        public Log(int id, int idOfficials, DateTime dateTime, string description)
         {
             this.id = id;
-            this.id_officials = id_officials;
-            this.date_time = date_time;
+            this.idOfficials = idOfficials;
+            this.dateTime = dateTime;
             this.description = description;
         }
 
-        public object GetAll()
-        {
-            return this;
-        }
+        public object GetAll() => this;
 
         public object GetAttribute(string attribute)
         {
@@ -31,10 +28,10 @@ namespace CitasEps.Models
                     attributeReturn = id;
                     break;
                 case "id_officials":
-                    attributeReturn = id_officials;
+                    attributeReturn = idOfficials;
                     break;
                 case "date_time":
-                    attributeReturn = date_time;
+                    attributeReturn = dateTime;
                     break;
                 case "description":
                     attributeReturn = description;
