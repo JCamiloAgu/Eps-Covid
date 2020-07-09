@@ -91,11 +91,11 @@ namespace CitasEps.Views.Official
             string name = TxtBoxName.Text;
             string lastName = TxtBoxLastName.Text;
             string identification = TxtBoxIdentification.Text;
-            string email= TxtBoxEmail.Text;
-            string pwd= (officialId == 0) ? TxtBoxPwd.Text : null;
+            string email = TxtBoxEmail.Text;
+            string pwd = (officialId == 0) ? TxtBoxPwd.Text : null;
 
             bool status = CheckBoxStatus.Checked;
-            string rol = (RadioButtonAdmin.Checked) ? "administrador" : "medico" ;
+            string rol = (RadioButtonAdmin.Checked) ? "administrador" : "medico";
 
             return new Models.Official(officialId, identification, name, lastName, email, pwd, rol, status);
         }
@@ -107,6 +107,6 @@ namespace CitasEps.Views.Official
         }
 
         private void CreateUpdateOfficialFrm_FormClosed(object sender, FormClosedEventArgs e) => OnCloseForm();
-        
+
     }
 }

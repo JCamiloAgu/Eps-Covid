@@ -40,21 +40,21 @@
             // 
             // TxtBoxName
             // 
-            this.TxtBoxName.Location = new System.Drawing.Point(175, 85);
+            this.TxtBoxName.Location = new System.Drawing.Point(23, 40);
             this.TxtBoxName.Name = "TxtBoxName";
             this.TxtBoxName.Size = new System.Drawing.Size(303, 20);
             this.TxtBoxName.TabIndex = 0;
             // 
             // TxtBoxLastName
             // 
-            this.TxtBoxLastName.Location = new System.Drawing.Point(175, 135);
+            this.TxtBoxLastName.Location = new System.Drawing.Point(23, 90);
             this.TxtBoxLastName.Name = "TxtBoxLastName";
             this.TxtBoxLastName.Size = new System.Drawing.Size(303, 20);
             this.TxtBoxLastName.TabIndex = 1;
             // 
             // TxtBoxIdentification
             // 
-            this.TxtBoxIdentification.Location = new System.Drawing.Point(175, 186);
+            this.TxtBoxIdentification.Location = new System.Drawing.Point(23, 141);
             this.TxtBoxIdentification.Name = "TxtBoxIdentification";
             this.TxtBoxIdentification.Size = new System.Drawing.Size(303, 20);
             this.TxtBoxIdentification.TabIndex = 2;
@@ -63,7 +63,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.ForeColor = System.Drawing.Color.Black;
-            this.label1.Location = new System.Drawing.Point(172, 69);
+            this.label1.Location = new System.Drawing.Point(20, 24);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(44, 13);
             this.label1.TabIndex = 4;
@@ -73,7 +73,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.ForeColor = System.Drawing.Color.Black;
-            this.label2.Location = new System.Drawing.Point(172, 119);
+            this.label2.Location = new System.Drawing.Point(20, 74);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(44, 13);
             this.label2.TabIndex = 5;
@@ -83,7 +83,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.ForeColor = System.Drawing.Color.Black;
-            this.label3.Location = new System.Drawing.Point(172, 170);
+            this.label3.Location = new System.Drawing.Point(20, 125);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(70, 13);
             this.label3.TabIndex = 6;
@@ -93,7 +93,7 @@
             // 
             this.CheckBoxStatus.AutoSize = true;
             this.CheckBoxStatus.ForeColor = System.Drawing.Color.Black;
-            this.CheckBoxStatus.Location = new System.Drawing.Point(175, 221);
+            this.CheckBoxStatus.Location = new System.Drawing.Point(23, 176);
             this.CheckBoxStatus.Name = "CheckBoxStatus";
             this.CheckBoxStatus.Size = new System.Drawing.Size(68, 17);
             this.CheckBoxStatus.TabIndex = 8;
@@ -104,7 +104,7 @@
             // 
             this.BtnSaveAffiliate.BackColor = System.Drawing.Color.DodgerBlue;
             this.BtnSaveAffiliate.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnSaveAffiliate.Location = new System.Drawing.Point(175, 252);
+            this.BtnSaveAffiliate.Location = new System.Drawing.Point(23, 207);
             this.BtnSaveAffiliate.Name = "BtnSaveAffiliate";
             this.BtnSaveAffiliate.Size = new System.Drawing.Size(303, 23);
             this.BtnSaveAffiliate.TabIndex = 9;
@@ -117,7 +117,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(355, 288);
             this.Controls.Add(this.BtnSaveAffiliate);
             this.Controls.Add(this.CheckBoxStatus);
             this.Controls.Add(this.label3);
@@ -127,8 +127,9 @@
             this.Controls.Add(this.TxtBoxLastName);
             this.Controls.Add(this.TxtBoxName);
             this.ForeColor = System.Drawing.Color.White;
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "CreateUpdateAffiliateFrm";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Afiliado";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.CreateUpdateAffiliateFrm_FormClosed);
             this.Load += new System.EventHandler(this.CreateUpdateAffiliateFrm_Load);

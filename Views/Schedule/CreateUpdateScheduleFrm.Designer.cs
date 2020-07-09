@@ -97,6 +97,7 @@
             this.Controls.Add(this.label2);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "CreateUpdateScheduleFrm";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Agenda";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.CreateUpdateScheduleFrm_FormClosed);
             this.Load += new System.EventHandler(this.CreateUpdateScheduleFrm_Load);

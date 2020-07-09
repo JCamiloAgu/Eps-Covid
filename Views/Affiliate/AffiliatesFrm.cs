@@ -1,7 +1,6 @@
 ﻿using CitasEps.Controllers;
 using System;
 using System.Collections.Generic;
-using System.Reflection;
 using System.Windows.Forms;
 
 namespace CitasEps.Views.Affiliate

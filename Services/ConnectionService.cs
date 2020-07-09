@@ -20,9 +20,6 @@ namespace CitasEps.Services
             return connection;
         }
 
-        public void Close()
-        {
-            connection.Close();
-        }
+        public void Close() => connection.Close();
     }
 }

@@ -145,6 +145,7 @@
             this.Controls.Add(this.ListViewSchedules);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.Name = "SchedulesFrm";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Agenda";
             this.Load += new System.EventHandler(this.SchedulesFrm_Load);
             this.ResumeLayout(false);

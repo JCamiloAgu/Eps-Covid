@@ -70,37 +70,37 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="CalendarAppoinment.cs">
+    <Compile Include="Views\Calendar\CalendarFrm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="CalendarAppoinment.Designer.cs">
-      <DependentUpon>CalendarAppoinment.cs</DependentUpon>
+    <Compile Include="Views\Calendar\CalendarFrm.Designer.cs">
+      <DependentUpon>CalendarFrm.cs</DependentUpon>
     </Compile>
     <Compile Include="Constants\CurrentUser.cs" />
     <Compile Include="Controllers\AffiliatesController.cs" />
     <Compile Include="Controllers\Controller.cs" />
     <Compile Include="Controllers\LogController.cs" />
-    <Compile Include="Controllers\EmailConfirCodeController.cs" />
+    <Compile Include="Controllers\EmailConfirmCodeController.cs" />
     <Compile Include="Controllers\MediaController.cs" />
     <Compile Include="Controllers\OfficialsController.cs" />
     <Compile Include="Controllers\QuotesController.cs" />
     <Compile Include="Controllers\SchedulesController.cs" />
     <Compile Include="Controllers\UsersController.cs" />
     <Compile Include="Controllers\UsersMediaController.cs" />
-    <Compile Include="login.cs">
+    <Compile Include="Views\Login\LoginUsersFrm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="login.Designer.cs">
-      <DependentUpon>login.cs</DependentUpon>
+    <Compile Include="Views\Login\LoginUsersFrm.Designer.cs">
+      <DependentUpon>LoginUsersFrm.cs</DependentUpon>
     </Compile>
-    <Compile Include="LoginOfficials.cs">
+    <Compile Include="Views\Login\LoginOfficialsFrm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="LoginOfficials.Designer.cs">
-      <DependentUpon>LoginOfficials.cs</DependentUpon>
+    <Compile Include="Views\Login\LoginOfficialsFrm.Designer.cs">
+      <DependentUpon>LoginOfficialsFrm.cs</DependentUpon>
     </Compile>
     <Compile Include="Models\Affiliate.cs" />
-    <Compile Include="Models\Email_Confirm_Code.cs" />
+    <Compile Include="Models\EmailConfirmCode.cs" />
     <Compile Include="Models\IModel.cs" />
     <Compile Include="Models\Log.cs" />
     <Compile Include="Models\Media.cs" />
@@ -110,17 +110,17 @@
     <Compile Include="Models\Schedule.cs" />
     <Compile Include="Models\SheduleAppoinment.cs" />
     <Compile Include="Models\User.cs" />
-    <Compile Include="Models\User_Media.cs" />
+    <Compile Include="Models\UsersMedia.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Services\ConnectionService.cs" />
     <Compile Include="Services\HelpersService.cs" />
     <Compile Include="Services\EmailService.cs" />
-    <Compile Include="Views\Auth\confirm-email.cs">
+    <Compile Include="Views\Auth\ConfirmEmailFrm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Views\Auth\confirm-email.Designer.cs">
-      <DependentUpon>confirm-email.cs</DependentUpon>
+    <Compile Include="Views\Auth\ConfirmEmailFrm.Designer.cs">
+      <DependentUpon>ConfirmEmailFrm.cs</DependentUpon>
     </Compile>
     <Compile Include="Views\Affiliate\AffiliatesFrm.cs">
       <SubType>Form</SubType>
@@ -134,17 +134,17 @@
     <Compile Include="Views\Affiliate\CreateUpdateAffiliateFrm.Designer.cs">
       <DependentUpon>CreateUpdateAffiliateFrm.cs</DependentUpon>
     </Compile>
-    <Compile Include="Views\Doctors\DoctorsListUser.cs">
+    <Compile Include="Views\Doctors\DoctorsListUserFrm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Views\Doctors\DoctorsListUser.Designer.cs">
-      <DependentUpon>DoctorsListUser.cs</DependentUpon>
+    <Compile Include="Views\Doctors\DoctorsListUserFrm.Designer.cs">
+      <DependentUpon>DoctorsListUserFrm.cs</DependentUpon>
     </Compile>
-    <Compile Include="Views\Log\Logs.cs">
+    <Compile Include="Views\Log\LogsFrm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Views\Log\Logs.Designer.cs">
-      <DependentUpon>Logs.cs</DependentUpon>
+    <Compile Include="Views\Log\LogsFrm.Designer.cs">
+      <DependentUpon>LogsFrm.cs</DependentUpon>
     </Compile>
     <Compile Include="Views\Official\CreateUpdateOfficialFrm.cs">
       <SubType>Form</SubType>
@@ -152,23 +152,23 @@
     <Compile Include="Views\Official\CreateUpdateOfficialFrm.Designer.cs">
       <DependentUpon>CreateUpdateOfficialFrm.cs</DependentUpon>
     </Compile>
-    <Compile Include="Views\Official\EditProfile.cs">
+    <Compile Include="Views\Official\EditProfileOfificialsFrm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Views\Official\EditProfile.Designer.cs">
-      <DependentUpon>EditProfile.cs</DependentUpon>
+    <Compile Include="Views\Official\EditProfileOfificialsFrm.Designer.cs">
+      <DependentUpon>EditProfileOfificialsFrm.cs</DependentUpon>
     </Compile>
-    <Compile Include="Views\Official\Home.cs">
+    <Compile Include="Views\Official\HomeFrm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Views\Official\Home.Designer.cs">
-      <DependentUpon>Home.cs</DependentUpon>
+    <Compile Include="Views\Official\HomeFrm.Designer.cs">
+      <DependentUpon>HomeFrm.cs</DependentUpon>
     </Compile>
-    <Compile Include="Views\Auth\forgot-password.cs">
+    <Compile Include="Views\Auth\ForgotPasswordFrm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Views\Auth\forgot-password.Designer.cs">
-      <DependentUpon>forgot-password.cs</DependentUpon>
+    <Compile Include="Views\Auth\ForgotPasswordFrm.Designer.cs">
+      <DependentUpon>ForgotPasswordFrm.cs</DependentUpon>
     </Compile>
     <Compile Include="Views\Official\OfficialsFrm.cs">
       <SubType>Form</SubType>
@@ -176,23 +176,23 @@
     <Compile Include="Views\Official\OfficialsFrm.Designer.cs">
       <DependentUpon>OfficialsFrm.cs</DependentUpon>
     </Compile>
-    <Compile Include="Views\Quote\QuoteUser.cs">
+    <Compile Include="Views\Quote\QuoteUserFrm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Views\Quote\QuoteUser.Designer.cs">
-      <DependentUpon>QuoteUser.cs</DependentUpon>
+    <Compile Include="Views\Quote\QuoteUserFrm.Designer.cs">
+      <DependentUpon>QuoteUserFrm.cs</DependentUpon>
     </Compile>
-    <Compile Include="Views\Quote\CreateDeleteQuote.cs">
+    <Compile Include="Views\Quote\CreateDeleteQuoteFrm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Views\Quote\CreateDeleteQuote.Designer.cs">
-      <DependentUpon>CreateDeleteQuote.cs</DependentUpon>
+    <Compile Include="Views\Quote\CreateDeleteQuoteFrm.Designer.cs">
+      <DependentUpon>CreateDeleteQuoteFrm.cs</DependentUpon>
     </Compile>
-    <Compile Include="Views\Quote\UserQuoteView.cs">
+    <Compile Include="Views\Quote\UserQuoteFrm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Views\Quote\UserQuoteView.Designer.cs">
-      <DependentUpon>UserQuoteView.cs</DependentUpon>
+    <Compile Include="Views\Quote\UserQuoteFrm.Designer.cs">
+      <DependentUpon>UserQuoteFrm.cs</DependentUpon>
     </Compile>
     <Compile Include="Views\Schedule\CreateUpdateScheduleFrm.cs">
       <SubType>Form</SubType>
@@ -206,44 +206,44 @@
     <Compile Include="Views\Schedule\SchedulesFrm.Designer.cs">
       <DependentUpon>SchedulesFrm.cs</DependentUpon>
     </Compile>
-    <Compile Include="Views\Auth\new-password.cs">
+    <Compile Include="Views\Auth\NewPasswordFrm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Views\Auth\new-password.Designer.cs">
-      <DependentUpon>new-password.cs</DependentUpon>
+    <Compile Include="Views\Auth\NewPasswordFrm.Designer.cs">
+      <DependentUpon>NewPasswordFrm.cs</DependentUpon>
     </Compile>
-    <Compile Include="Views\Auth\register.cs">
+    <Compile Include="Views\Auth\RegisterUserFrm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Views\Auth\register.Designer.cs">
-      <DependentUpon>register.cs</DependentUpon>
+    <Compile Include="Views\Auth\RegisterUserFrm.Designer.cs">
+      <DependentUpon>RegisterUserFrm.cs</DependentUpon>
     </Compile>
-    <Compile Include="Views\User\currentPass.cs">
+    <Compile Include="Views\User\CurrentPassFrm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Views\User\currentPass.Designer.cs">
-      <DependentUpon>currentPass.cs</DependentUpon>
+    <Compile Include="Views\User\CurrentPassFrm.Designer.cs">
+      <DependentUpon>CurrentPassFrm.cs</DependentUpon>
     </Compile>
-    <Compile Include="Views\User\Home.cs">
+    <Compile Include="Views\User\HomeFrm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Views\User\Home.Designer.cs">
-      <DependentUpon>Home.cs</DependentUpon>
+    <Compile Include="Views\User\HomeFrm.Designer.cs">
+      <DependentUpon>HomeFrm.cs</DependentUpon>
     </Compile>
-    <Compile Include="Views\User\profile.cs">
+    <Compile Include="Views\User\UserProfileFrm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Views\User\profile.Designer.cs">
-      <DependentUpon>profile.cs</DependentUpon>
+    <Compile Include="Views\User\UserProfileFrm.Designer.cs">
+      <DependentUpon>UserProfileFrm.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="CalendarAppoinment.resx">
-      <DependentUpon>CalendarAppoinment.cs</DependentUpon>
+    <EmbeddedResource Include="Views\Calendar\CalendarFrm.resx">
+      <DependentUpon>CalendarFrm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="login.resx">
-      <DependentUpon>login.cs</DependentUpon>
+    <EmbeddedResource Include="Views\Login\LoginUsersFrm.resx">
+      <DependentUpon>LoginUsersFrm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="LoginOfficials.resx">
-      <DependentUpon>LoginOfficials.cs</DependentUpon>
+    <EmbeddedResource Include="Views\Login\LoginOfficialsFrm.resx">
+      <DependentUpon>LoginOfficialsFrm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -254,8 +254,8 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="Views\Auth\confirm-email.resx">
-      <DependentUpon>confirm-email.cs</DependentUpon>
+    <EmbeddedResource Include="Views\Auth\ConfirmEmailFrm.resx">
+      <DependentUpon>ConfirmEmailFrm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Views\Affiliate\AffiliatesFrm.resx">
       <DependentUpon>AffiliatesFrm.cs</DependentUpon>
@@ -263,36 +263,36 @@
     <EmbeddedResource Include="Views\Affiliate\CreateUpdateAffiliateFrm.resx">
       <DependentUpon>CreateUpdateAffiliateFrm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Views\Doctors\DoctorsListUser.resx">
-      <DependentUpon>DoctorsListUser.cs</DependentUpon>
+    <EmbeddedResource Include="Views\Doctors\DoctorsListUserFrm.resx">
+      <DependentUpon>DoctorsListUserFrm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Views\Log\Logs.resx">
-      <DependentUpon>Logs.cs</DependentUpon>
+    <EmbeddedResource Include="Views\Log\LogsFrm.resx">
+      <DependentUpon>LogsFrm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Views\Official\CreateUpdateOfficialFrm.resx">
       <DependentUpon>CreateUpdateOfficialFrm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Views\Official\EditProfile.resx">
-      <DependentUpon>EditProfile.cs</DependentUpon>
+    <EmbeddedResource Include="Views\Official\EditProfileOfificialsFrm.resx">
+      <DependentUpon>EditProfileOfificialsFrm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Views\Official\Home.resx">
-      <DependentUpon>Home.cs</DependentUpon>
+    <EmbeddedResource Include="Views\Official\HomeFrm.resx">
+      <DependentUpon>HomeFrm.cs</DependentUpon>
       <SubType>Designer</SubType>
     </EmbeddedResource>
-    <EmbeddedResource Include="Views\Auth\forgot-password.resx">
-      <DependentUpon>forgot-password.cs</DependentUpon>
+    <EmbeddedResource Include="Views\Auth\ForgotPasswordFrm.resx">
+      <DependentUpon>ForgotPasswordFrm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Views\Official\OfficialsFrm.resx">
       <DependentUpon>OfficialsFrm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Views\Quote\QuoteUser.resx">
-      <DependentUpon>QuoteUser.cs</DependentUpon>
+    <EmbeddedResource Include="Views\Quote\QuoteUserFrm.resx">
+      <DependentUpon>QuoteUserFrm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Views\Quote\CreateDeleteQuote.resx">
-      <DependentUpon>CreateDeleteQuote.cs</DependentUpon>
+    <EmbeddedResource Include="Views\Quote\CreateDeleteQuoteFrm.resx">
+      <DependentUpon>CreateDeleteQuoteFrm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Views\Quote\UserQuoteView.resx">
-      <DependentUpon>UserQuoteView.cs</DependentUpon>
+    <EmbeddedResource Include="Views\Quote\UserQuoteFrm.resx">
+      <DependentUpon>UserQuoteFrm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Views\Schedule\CreateUpdateScheduleFrm.resx">
       <DependentUpon>CreateUpdateScheduleFrm.cs</DependentUpon>
@@ -300,20 +300,20 @@
     <EmbeddedResource Include="Views\Schedule\SchedulesFrm.resx">
       <DependentUpon>SchedulesFrm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Views\Auth\new-password.resx">
-      <DependentUpon>new-password.cs</DependentUpon>
+    <EmbeddedResource Include="Views\Auth\NewPasswordFrm.resx">
+      <DependentUpon>NewPasswordFrm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Views\Auth\register.resx">
-      <DependentUpon>register.cs</DependentUpon>
+    <EmbeddedResource Include="Views\Auth\RegisterUserFrm.resx">
+      <DependentUpon>RegisterUserFrm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Views\User\currentPass.resx">
-      <DependentUpon>currentPass.cs</DependentUpon>
+    <EmbeddedResource Include="Views\User\CurrentPassFrm.resx">
+      <DependentUpon>CurrentPassFrm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Views\User\Home.resx">
-      <DependentUpon>Home.cs</DependentUpon>
+    <EmbeddedResource Include="Views\User\HomeFrm.resx">
+      <DependentUpon>HomeFrm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Views\User\profile.resx">
-      <DependentUpon>profile.cs</DependentUpon>
+    <EmbeddedResource Include="Views\User\UserProfileFrm.resx">
+      <DependentUpon>UserProfileFrm.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">

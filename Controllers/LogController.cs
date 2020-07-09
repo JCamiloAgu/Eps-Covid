@@ -14,14 +14,14 @@ namespace CitasEps.Controllers
         public List<Log> GetAll()
         {
             MySqlDataReader reader = GetAllFromEntity();
-            List<Log> data = LogListGenerate(reader);
+            List<Log> data = FormatQueryResult(reader);
             Close();
             return data;
         }
 
         public int CreateLog(string description)
         {
-            Log log = new Log(0, CurrentUser.currentUserId, DateTime.Now, description);
+            Log log = new Log(0, CurrentUser.id, DateTime.Now, description);
 
             string[] attributes = { "id_officials:int", "date_time:date", "description:string" };
 
@@ -31,13 +31,13 @@ namespace CitasEps.Controllers
             return id;
         }
 
-        public List<Log> LogListGenerate(MySqlDataReader readerData)
+        private List<Log> FormatQueryResult(MySqlDataReader readerData)
         {
             List<Log> logList = new List<Log>();
             while (readerData.Read())
             {
                 int id = int.Parse(readerData.GetString(0));
-       
+
                 DateTime dateTime = DateTime.Parse(readerData.GetString(1));
                 string description = readerData.GetString(2);
                 int idOfficials = int.Parse(readerData.GetString(3));

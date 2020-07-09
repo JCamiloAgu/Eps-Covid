@@ -1,15 +1,13 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
-namespace CitasEps.Models {
-	class Log : IModel {
-		private readonly int id;
-		private readonly int id_officials;
-		private readonly DateTime date_time;
-		private readonly string description;
+namespace CitasEps.Models
+{
+    class Log : IModel
+    {
+        private readonly int id;
+        private readonly int id_officials;
+        private readonly DateTime date_time;
+        private readonly string description;
 
         public Log(int id, int id_officials, DateTime date_time, string description)
         {

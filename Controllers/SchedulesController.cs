@@ -13,7 +13,7 @@ namespace CitasEps.Controllers
         public List<Schedule> GetAllByOfficialId(string officialId)
         {
             MySqlDataReader reader = GetFromEntity("id_officials", officialId, 999);
-            List<Schedule> data = ScheduleListGenerate(reader);
+            List<Schedule> data = FormatQueryResult(reader);
             Close();
             return data;
         }
@@ -21,7 +21,7 @@ namespace CitasEps.Controllers
         public Schedule GetById(string value)
         {
             MySqlDataReader reader = GetFromEntity("id", value);
-            List<Schedule> data = ScheduleListGenerate(reader);
+            List<Schedule> data = FormatQueryResult(reader);
             Close();
             return data.Count > 0 ? data[0] : null;
         }
@@ -54,14 +54,14 @@ namespace CitasEps.Controllers
             return isOk;
         }
 
-        public List<Schedule> ScheduleListGenerate(MySqlDataReader readerData)
+        private List<Schedule> FormatQueryResult(MySqlDataReader readerData)
         {
             List<Schedule> scheduleList = new List<Schedule>();
             while (readerData.Read())
             {
                 int id = readerData.GetInt32(0);
                 DateTime initHour = DateTime.Parse(readerData.GetString(1));
-                DateTime endHour =  DateTime.Parse(readerData.GetString(2));
+                DateTime endHour = DateTime.Parse(readerData.GetString(2));
                 int idOfficial = readerData.GetInt32(3);
 
                 scheduleList.Add(new Schedule(id, idOfficial, initHour, endHour));
