@@ -93,7 +93,7 @@ namespace CitasEps.Views.AuthUser
 
 
                     //3) Generar codigo de confirmacion del email
-                    string code = HelpersService.GetCode();
+                    string code = HelpersService.GetRandomCode();
                     EmailConfirmCode emailConfirmCode = new EmailConfirmCode(id, newIdUser, code, false);
                     int newIdEmailConfirmCode = emailConfirCodeController.Create(emailConfirmCode);
                     if (newIdEmailConfirmCode != -1)

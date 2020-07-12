@@ -7,12 +7,12 @@ namespace CitasEps.Views.Quote
 {
     public partial class UserQuoteFrm : Form
     {
-        private string idQuote;
-        private QuotesController quotesController;
-        private UsersController usersController;
-        private AffiliatesController affiliatesController;
-        private MediaController mediaController;
-        private List<string> ids = new List<string>();
+        private readonly string idQuote;
+        private readonly QuotesController quotesController;
+        private readonly UsersController usersController;
+        private readonly AffiliatesController affiliatesController;
+        private readonly MediaController mediaController;
+        private readonly List<string> ids = new List<string>();
 
 
         public UserQuoteFrm(string idQuote)

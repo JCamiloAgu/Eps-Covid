@@ -105,13 +105,13 @@
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.Color.White;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(630, 0);
+            this.label2.Location = new System.Drawing.Point(630, 9);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(134, 24);
             this.label2.TabIndex = 4;
             this.label2.Text = "Cancelar Cita";
             // 
-            // QuoteUser
+            // QuoteUserFrm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -122,7 +122,7 @@
             this.Controls.Add(this.txtId);
             this.Controls.Add(this.ListViewQuotes);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "QuoteUser";
+            this.Name = "QuoteUserFrm";
             this.Text = "QuoteUser";
             this.ResumeLayout(false);
             this.PerformLayout();

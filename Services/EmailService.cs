@@ -7,19 +7,15 @@ namespace CitasEps.Services
 {
     class EmailService
     {
-
         public static async Task SendEmailAsync(string to, string code)
         {
-            /*
-			 * Se crea una instancia a la libreria MailjetClient con el KEY y el SECRET del usuario creado en la
-			 * plataforma de mailjet.
-			 */
-            MailjetClient client = new MailjetClient("b20374fadb92b3c1925b191b84b6f811", "daea60aa14a21ba8b806162d42ee9ccd")
+            MailjetClient client = new MailjetClient("f1fc20c420ef0e7f5f0f7d78b2d00dab", "d27d02d5056fed87219187ca439b3496")
             {
                 Version = ApiVersion.V3_1,
             };
 
-            string bodyText = string.Format("<p>Hola! esto es un correo de confirmación de la plataforma de citas de su EPS 'La última morada'.</p><p>Su codigo de confirmación es: <strong> {0} </strong></p>", code);
+            string bodyText = string.Format("<p>Acá tienes tu código de verificación para completar el registro en la EPS " +
+                "<strong> Todos Son covid </strong>.</p><p>Su codigo de confirmación es: <strong> {0} </strong></p>", code);
 
             MailjetRequest request = new MailjetRequest
             {
@@ -27,17 +23,17 @@ namespace CitasEps.Services
             }.Property(Send.Messages, new JArray {
                 new JObject {
                     {"From", new JObject {
-                    {"Email", "fernando.zapata.live@gmail.com"},
-                    {"Name", "La última morada - EPS"}
+                    {"Email", "jcagudelo42@misena.edu.co"},
+                    {"Name", "EPS Todos son Covid"}
                     }},
                     {"To", new JArray {
                     new JObject {
                         {"Email", to},
-                        {"Name", "Usuario EPS"}
+                        {"Name", "Usuario de la EPS"}
                         }
                     }},
-                    {"Subject", "¡Confirmación de Correo!"},
-                    {"TextPart", "La última morada - EPS"},
+                    {"Subject", "Confirmar correo electrónico"},
+                    {"TextPart", "Todos son Covid"},
                     {"HTMLPart", bodyText}
                     }
             });

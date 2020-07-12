@@ -97,6 +97,7 @@
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.containerPanel);
             this.Controls.Add(this.menu);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.MainMenuStrip = this.menu;
             this.Name = "HomeFrm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;

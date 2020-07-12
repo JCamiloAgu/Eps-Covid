@@ -34,14 +34,16 @@
             // 
             // listViewDoctors
             // 
+            this.listViewDoctors.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.listViewDoctors.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
             this.id,
             this.name});
-            this.listViewDoctors.ForeColor = System.Drawing.SystemColors.InactiveCaption;
+            this.listViewDoctors.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.listViewDoctors.ForeColor = System.Drawing.Color.Black;
             this.listViewDoctors.HideSelection = false;
-            this.listViewDoctors.Location = new System.Drawing.Point(463, 49);
+            this.listViewDoctors.Location = new System.Drawing.Point(0, 156);
             this.listViewDoctors.Name = "listViewDoctors";
-            this.listViewDoctors.Size = new System.Drawing.Size(316, 362);
+            this.listViewDoctors.Size = new System.Drawing.Size(816, 294);
             this.listViewDoctors.TabIndex = 0;
             this.listViewDoctors.UseCompatibleStateImageBehavior = false;
             this.listViewDoctors.View = System.Windows.Forms.View.Details;
@@ -58,7 +60,7 @@
             // 
             // txtDoctorId
             // 
-            this.txtDoctorId.Location = new System.Drawing.Point(25, 71);
+            this.txtDoctorId.Location = new System.Drawing.Point(225, 101);
             this.txtDoctorId.Name = "txtDoctorId";
             this.txtDoctorId.Size = new System.Drawing.Size(357, 20);
             this.txtDoctorId.TabIndex = 1;
@@ -66,7 +68,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(22, 49);
+            this.label1.Location = new System.Drawing.Point(371, 85);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(72, 13);
             this.label1.TabIndex = 2;
@@ -77,7 +79,7 @@
             this.button1.BackColor = System.Drawing.Color.DodgerBlue;
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(25, 99);
+            this.button1.Location = new System.Drawing.Point(225, 127);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(357, 23);
             this.button1.TabIndex = 3;
@@ -89,7 +91,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(21, 10);
+            this.label2.Location = new System.Drawing.Point(192, 9);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(429, 24);
             this.label2.TabIndex = 4;

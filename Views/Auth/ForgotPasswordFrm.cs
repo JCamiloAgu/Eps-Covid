@@ -34,7 +34,7 @@ namespace CitasEps.Views.AuthUser
             else
             {
                 //3) Generar codigo de confirmacion para email
-                string code = HelpersService.GetCode();
+                string code = HelpersService.GetRandomCode();
                 int idUser = int.Parse(user.GetAttribute("id").ToString());
                 EmailConfirmCode emailConfirmCode = new EmailConfirmCode(0, idUser, code, false);
                 if (emailConfirCodeController.Update(idUser, emailConfirmCode))
